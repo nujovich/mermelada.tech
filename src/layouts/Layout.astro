@@ -1,5 +1,6 @@
 ---
 
+import { Footer } from '@components/Footer';
 import { Header } from '@components/Header';
 import 'src/global.css'
 
@@ -26,5 +27,6 @@ const { title = 'Mermelada.tech' } = Astro.props as Props
   <body>
     <Header/>
     <slot />
+    <Footer/>
   </body>
 </html>

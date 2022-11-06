@@ -1,7 +1,13 @@
-.card-container{
+---
+
+---
+<div class="card-container">
+  <slot/>
+</div>
+<style>
+  .card-container{
     width: 500px;
     padding: 10px 10px;
-    margin: 20px auto;
     box-shadow: rgba(255, 255, 255, 0.938) 0px 3px 8px;
     border-radius: 2%;
     -webkit-transform: perspective(1px) translateZ(0);
@@ -14,4 +20,6 @@
 .card-container:hover{
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
+    scroll-behavior: hidden;
 }
+</style>

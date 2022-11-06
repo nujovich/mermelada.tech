@@ -1,0 +1,39 @@
+---
+import Card from "@components/Card.astro";
+import Layout from "@layout";
+
+const posts = await Astro.glob('../posts/*.md');
+---
+<Layout title="Mermelada.tech 🌈 Blog">
+    <section class="page-content">
+      <div class="container">
+        {posts.map(post => (
+            <Card>
+                <h3>{post.frontmatter.title}</h3>
+                <div>
+                    Written by <strong>{post.frontmatter.author} </strong> on {new Date(post.frontmatter.date).toLocaleDateString()}
+                </div>
+                <p>{post.frontmatter.excerpt}</p>  
+                <a class="btn" href={`/${post.frontmatter.slug}`}>Lee más 📖</a>
+            </Card>
+        ))}
+      </div>
+    </section>
+  </Layout>
+  <style>
+    .page-content{
+        background: var(--color-primary);
+        color: #FFF;
+        padding: 15px 15px;
+        display: grid;
+        place-content: center;
+        min-height: 100vh;
+    }
+    .btn{
+        text-decoration: solid;
+        color: #FFF;
+    }
+    .btn:hover{
+        text-decoration: underline;
+    }
+  </style>
