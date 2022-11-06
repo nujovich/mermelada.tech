@@ -1,0 +1,12 @@
+.landing-page{
+    display: grid;
+    place-content: center;
+    height: 500px;
+    background: url('../../../banner.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.title, .subtitle{
+    text-align: center;
+    color: #FFF;
+}

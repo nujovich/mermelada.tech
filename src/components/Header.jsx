@@ -5,7 +5,7 @@ export const Header = () => {
       <div className='container'>
         <div className='logo'>
           <a href='/'>
-            <img src='/mermeladatech.jpeg' alt='Mermelada.tech logo' />
+            <img src='/mermelada.svg' alt='Mermelada.tech logo' />
           </a>
         </div>
         <nav>
@@ -14,7 +14,7 @@ export const Header = () => {
               <a href='/'>Home</a>
             </li>
             <li>
-              <a href='/about'>About</a>
+              <a href='/comunidad'>Comunidad</a>
             </li>
             <li>
               <a href='/blog'>Blog</a>
