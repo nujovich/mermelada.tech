@@ -1,0 +1,15 @@
+.nav-left {
+    height: 100vh;
+    width: 15%;
+    background-color: #FBF7F4;
+}
+
+.items {
+    width: 100%;
+    text-align: center;
+    background-color: #CCC1BE;
+}
+
+.items p {
+    font-size: 20px;
+}

@@ -1,0 +1,43 @@
+---
+import Layout from "@layout";
+
+export async function getStaticPaths() {
+  const posts = await Astro.glob('../posts/*.md');
+  return posts.map(post => ({
+    params: {
+      slug: post.frontmatter.slug
+    },
+    props: {
+      post
+    }
+  }));
+}
+const { Content, frontmatter } = Astro.props.post;
+---
+<Layout title={frontmatter.title}>
+    <section class="page-content">
+      <div class="container">
+        <a class="btn" href="/blog">Atrás ⏪</a>
+        <h2>{frontmatter.title}</h2>
+        <div>
+            Escrito por <strong>{frontmatter.author} </strong> el día {new Date(frontmatter.date).toLocaleDateString()}
+        </div>
+        <Content />
+        <a class="btn" href="/blog">Atrás ⏪</a>
+      </div>
+    </section>
+  </Layout>
+  <style>
+    .container{
+        background-color: var(--color-primary);
+        color: #FFF;
+        padding: 15px 15px;
+    }
+    .btn{
+        text-decoration: solid;
+        color: #FFF;
+    }
+    .btn:hover{
+        text-decoration: underline;
+    }
+  </style>
