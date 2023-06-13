@@ -1,3 +1,4 @@
+import { MenuItem } from './MenuItem'
 import './styles/header.css'
 export const Header = () => {
   return (
@@ -5,22 +6,20 @@ export const Header = () => {
       <div className='container'>
         <div className='logo'>
           <a href='/'>
-            <img src='/mermelada.svg' alt='Mermelada.tech logo' />
+            <img src='/mermelada-logo.svg' alt='Mermelada.tech logo' />
           </a>
         </div>
-        <nav>
+        <nav className='menu'>
           <ul>
-            <li>
-              <a href='/'>Home</a>
-            </li>
-            <li>
-              <a href='/comunidad'>Comunidad</a>
-            </li>
-            <li>
-              <a href='/blog'>Blog</a>
-            </li>
+            <MenuItem name='Nosotras' />
+            <MenuItem name='Blog' /> 
+            <MenuItem name='Proyectos' />
+            <MenuItem name='Eventos' />
           </ul>
         </nav>
+        <div className="patreon-link">
+          <a href="https://www.patreon.com/mermelada.tech" target="_blank" rel="noreferrer">Patreon</a>
+        </div>
       </div>
     </header>
   )

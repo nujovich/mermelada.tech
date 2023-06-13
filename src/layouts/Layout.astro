@@ -16,17 +16,23 @@ const { title = 'Mermelada.tech' } = Astro.props as Props
     <meta charset='UTF-8' />
     <meta http-equiv='X-UA-Compatible' content='IE=edge' />
     <meta name='viewport' content='width=device-width, initial-scale=1.0' />
-    <link rel='preconnect' href='https://fonts.googleapis.com' />
-    <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
-    <link
-      href='https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap'
-      rel='stylesheet'
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
     <title>{title}</title>
   </head>
-  <body>
+  <section>
     <Header/>
     <slot />
-    <Footer/>
-  </body>
+  </section>
 </html>
+<style>
+  section {
+    background-image: url('./rocket.svg');
+    background-color: var(--color-primary);
+    background-size: 75%;
+    background-repeat: repeat-y;
+    background-position: right;
+    height: max-content;
+  }
+</style>

@@ -1,5 +1,5 @@
 :root {
-    --color-primary: #0f172a;
+    --color-primary: #F7F3ED;
     --color-secondary: #6b21a8;
 }
 
@@ -12,9 +12,6 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  background: #f8fafc;
-  color: #333;
+  font-family: 'IBM Plex Mono', monospace;
+  background: linear-gradient(0deg, #F7F3ED, #F7F3ED);
 }

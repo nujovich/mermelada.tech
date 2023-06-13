@@ -3,55 +3,50 @@ import Card from "./Card.astro";
 
 ---
 
-
 <section class='about-page'>
-  <h1>Sobre Nosotras</h1>
+  <h1>Nosotras</h1>
   <Card>
-    <h1>¿Quiénes sómos?</h1>
+    <h1>Comunidad 📧</h1>
     <p>
-      'Es una comunidad de mujeres para mujeres, a fin de reforzar nuestros
+      Es una comunidad de mujeres para mujeres, a fin de reforzar nuestros
       conocimientos en diferentes lenguajes de programación con el aporte de
       todas y cada una. Buscamos tener un ambiente de apoyo, respeto,
       contención y compañerismo. No se espera impartir cursos o bootcamps,
       si no establecer workshops y ambientes colaborativos en base a
       diferentes niveles, con el objetivos de potenciar la motivación en
-      equipo.'
+      equipo.
     </p>
   </Card>
   <Card>
-    <h1>Metodología</h1>
+    <h1>Misión 🎯</h1>
     <p>
-      'Aprenderemos mediante la colaboración en distintos proyectos de
+      Aprenderemos mediante la colaboración en distintos proyectos de
       código abierto adaptados a los niveles de cada integrante. ¡Puedes
-      incluirlos en tu porfolio para ampliar tu trabajo!'
+      incluirlos en tu porfolio para ampliar tu trabajo!
     </p>
   </Card>
   <Card>
-    <h1>Enfoque</h1>
+    <h1>Valores 👁️‍🗨️</h1>
     <p>
-      'Si bien los workshop compartidos son de carácter informativo y no
+      Si bien los workshop compartidos son de carácter informativo y no
       cursos certificados, tendrán contenido de valor que serán útiles para
       tener el conocimiento básico que luego se podrá profundizar de forma
       autodidacta. Entre todas crearemos rutas de aprendizaje más amigables
-      y no tan agobiantes.'
+      y no tan agobiantes.
     </p>
   </Card>
 </section>
 <style>
   .about-page{
-    height: fit-content;
+    min-height: fit-content;
+    height: 500px;
     display: flex;
-    gap: 1.5em;
-    background-color: var(--color-primary);
-    color: #FFF;
+    gap: 2rem;
     padding: 15px 15px;
     justify-content: center;
     align-items: center;
   }
 
-  h1{
-      color: #FFF;
-  }
 
   @media(max-width: 768px){
       .about-page{

@@ -1,26 +1,39 @@
 .header {
-    height: 70px;
-    background: var(--color-secondary);
+    height: 200px;
   }
   .header .container {
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 20px;
+    padding: 20px 20px;
   }
   .header img {
-    height: 40px;
-    vertical-align: middle;
-    border-radius: 20%;
+    width: 119px;
+    height: 119px;
+    left: 76px;
+    top: 36px;
   }
   .header nav ul {
     display: flex;
+    align-items: space-around;
   }
   .header nav ul li {
     padding: 0 10px;
     list-style: none;
   }
-  .header nav ul li a {
-    color: #fff;
+  .header nav ul li a, .patreon-link a {
+    color: #000000;
+    font-weight: bold;
+    text-decoration: none;
   }
+
+  .header nav ul li a{
+    padding: 0px 20px;
+  }
+
+  .header nav ul li a:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-decoration: underline;
+  }
+

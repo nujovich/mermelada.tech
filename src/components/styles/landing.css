@@ -1,12 +1,21 @@
 .landing-page{
-    display: grid;
-    place-content: center;
-    height: 500px;
-    background: url('../../../banner.png');
-    background-size: cover;
-    background-repeat: no-repeat;
+    display: block;
+    align-items: flex-start;
+    height: 100vh;
 }
-.title, .subtitle{
-    text-align: center;
-    color: #FFF;
+
+.title {
+    color: #000000;
+    font-size: 8rem;
+    font-weight: bold;
+    padding-left: 40px;
 }
+
+.sub-title {
+    color: #000000;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 2rem;
+    padding-left: 40px;
+}
+
