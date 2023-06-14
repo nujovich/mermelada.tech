@@ -19,3 +19,13 @@
     padding-left: 40px;
 }
 
+iframe {
+    margin-top: 2rem;
+    margin-left: 80px;
+    border-radius: 34px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
+    width: 50%;
+    height: 60%;
+    z-index: 1;
+}
+

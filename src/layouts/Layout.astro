@@ -1,6 +1,4 @@
 ---
-
-import { Footer } from '@components/Footer';
 import { Header } from '@components/Header';
 import 'src/global.css'
 
@@ -34,5 +32,11 @@ const { title = 'Mermelada.tech' } = Astro.props as Props
     background-repeat: repeat-y;
     background-position: right;
     height: max-content;
+  }
+
+  @media(max-width: 768px){
+      section{
+          height: 100vh;
+      }
   }
 </style>
