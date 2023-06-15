@@ -1,0 +1,11 @@
+{
+    "editor.formatOnSave": true,
+    "editor.linkedEditing": true,
+    "files.readonlyInclude": {
+        "package.json": true,
+        "**/node_modules/**": true,
+        "astro.config.mjs": true,
+        "package-lock.json": true
+    }
+
+}
