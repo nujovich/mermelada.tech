@@ -25,6 +25,7 @@
   .header nav ul li a, .patreon-link a {
     color: #000000;
     font-weight: bold;
+    font-size: 1.5rem;
     text-decoration: none;
   }
 

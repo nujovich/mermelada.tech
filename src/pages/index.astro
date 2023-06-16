@@ -1,10 +1,10 @@
 ---
-import About from "@components/About.astro";
-import { Landing } from "@components/Landing";
-import Layout from "@layout";
+import About from '@components/About.astro'
+import { Landing } from '@components/Landing'
+import Layout from '@layout'
 ---
-<Layout>
-  <Landing/>
-  <About/>
-</Layout>
 
+<Layout>
+  <Landing client:idle />
+  <About />
+</Layout>
